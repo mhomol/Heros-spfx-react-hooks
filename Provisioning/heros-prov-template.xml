@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.19.2003.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-96EF7668C5A04F45A1B83E062EF64A84">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-96EF7668C5A04F45A1B83E062EF64A84" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Heros" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Heros" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Heros/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Heros/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Heros/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{BC8A5773-0E8E-4A60-A52B-4505443D7509}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Heros/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="HeroImage" />
+                <FieldRef Name="Power1" />
+                <FieldRef Name="Power2" />
+                <FieldRef Name="Element" />
+                <FieldRef Name="CanEvolve_x003f_" />
+                <FieldRef Name="FlavorText" />
+                <FieldRef Name="Likes" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+            <View Name="{2FD753BA-1D47-4AAF-85A8-B3A7F75F3129}" MobileView="TRUE" Type="HTML" DisplayName="By Elements" Url="{site}/Lists/Heros/By Elements.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <GroupBy Collapse="TRUE" GroupLimit="30">
+                  <FieldRef Name="Element" />
+                </GroupBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="HeroImage" />
+                <FieldRef Name="Power1" />
+                <FieldRef Name="Power2" />
+                <FieldRef Name="Element" />
+                <FieldRef Name="CanEvolve_x003f_" />
+                <FieldRef Name="FlavorText" />
+                <FieldRef Name="Likes" />
+                <FieldRef Name="Race" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <ViewStyle ID="17" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Hero Image" Format="Image" Name="HeroImage" Title="Hero Image" Type="URL" ID="{f841b1cc-8f0f-41f7-91a1-2f952fc495af}" SourceID="{{listid:Heros}}" StaticName="HeroImage" ColName="nvarchar4" RowOrdinal="0" ColName2="nvarchar5" RowOrdinal2="0" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1" />
+            <Field DisplayName="Power 1" Format="Dropdown" MaxLength="255" Name="Power1" Title="Power 1" Type="Text" ID="{59777c51-54c4-4565-8564-016947233a4c}" SourceID="{{listid:Heros}}" StaticName="Power1" ColName="nvarchar6" RowOrdinal="0" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1" />
+            <Field DisplayName="Power 2" Format="Dropdown" MaxLength="255" Name="Power2" Title="Power 2" Type="Text" ID="{dc6db5ff-7b34-4181-9c6a-f5ee454dfdee}" SourceID="{{listid:Heros}}" StaticName="Power2" ColName="nvarchar7" RowOrdinal="0" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1" />
+            <Field DisplayName="Element" FillInChoice="FALSE" Format="Dropdown" Name="Element" Title="Element" Type="Choice" ID="{fe3ebdd8-d223-4f47-a225-5f2c53336bf6}" SourceID="{{listid:Heros}}" StaticName="Element" ColName="nvarchar8" RowOrdinal="0" CustomFormatter="" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Version="1">
+              <CHOICES>
+                <CHOICE>Earth</CHOICE>
+                <CHOICE>Air</CHOICE>
+                <CHOICE>Water</CHOICE>
+                <CHOICE>Fire</CHOICE>
+                <CHOICE>Dark</CHOICE>
+                <CHOICE>Light</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field DisplayName="Can Evolve?" Format="Dropdown" Name="CanEvolve_x003f_" Title="Can Evolve?" Type="Boolean" ID="{52c929b4-4570-41e7-8efb-11433f3de8ca}" SourceID="{{listid:Heros}}" StaticName="CanEvolve_x003f_" ColName="bit1" RowOrdinal="0" Version="1">
+              <Default>1</Default>
+            </Field>
+            <Field DisplayName="Flavor Text" Format="Dropdown" MaxLength="255" Name="FlavorText" Title="Flavor Text" Type="Text" ID="{8446668d-9d5d-43a2-b03c-ce9a395eda34}" SourceID="{{listid:Heros}}" StaticName="FlavorText" ColName="nvarchar9" RowOrdinal="0" />
+            <Field Decimals="0" DisplayName="Likes" Format="Dropdown" Name="Likes" Percentage="FALSE" Title="Likes" Type="Number" ID="{2125d3d3-ac6f-414f-a530-edb1869cd640}" SourceID="{{listid:Heros}}" StaticName="Likes" ColName="float1" RowOrdinal="0">
+              <Default>0</Default>
+            </Field>
+            <Field DisplayName="Race" FillInChoice="FALSE" Format="Dropdown" Name="Race" Title="Race" Type="Choice" ID="{73a06109-e35f-4723-be06-4478c2b11a05}" SourceID="{{listid:Heros}}" StaticName="Race" ColName="nvarchar10" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Elf</CHOICE>
+                <CHOICE>Dwarf</CHOICE>
+                <CHOICE>Demon</CHOICE>
+                <CHOICE>Dragon</CHOICE>
+                <CHOICE>Human</CHOICE>
+                <CHOICE>Pandaren</CHOICE>
+                <CHOICE>Ethereal</CHOICE>
+                <CHOICE>Mech</CHOICE>
+                <CHOICE>Shapeshifter</CHOICE>
+                <CHOICE>Dryad</CHOICE>
+                <CHOICE>Faerie</CHOICE>
+                <CHOICE>Monster</CHOICE>
+                <CHOICE>Undead</CHOICE>
+                <CHOICE>Beast</CHOICE>
+                <CHOICE>Centaur</CHOICE>
+                <CHOICE>Celestial</CHOICE>
+                <CHOICE>Elemental</CHOICE>
+                <CHOICE>Other</CHOICE>
+              </CHOICES>
+              <Default>Other</Default>
+            </Field>
+          </pnp:Fields>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://1-eastus1.pushp.svc.ms/notifications?token=w2-0f3122f6-1a75-4d8d-a554-67f08fad43db" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
