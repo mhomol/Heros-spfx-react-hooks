@@ -39,8 +39,8 @@ export interface HeroState {
 
 export interface HeroApi {
   state: HeroState;
-  setRefresh: () => void; //React.Dispatch<React.SetStateAction<boolean>>;
-  setLike: (IHero) => void; //React.Dispatch<React.SetStateAction<IHero>>;
+  setRefresh: () => void;
+  setLike: (IHero) => void;
 }
 /******************************************************************************** */
 
