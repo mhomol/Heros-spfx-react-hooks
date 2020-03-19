@@ -6,6 +6,14 @@ This web part interacts with a Heros list and a Hero Teams list to display infor
 
 PnP provisioning xml templates have been provided in the Provisioning folder that you can incorporate into your Sharepoint site.
 
+From the root, go to Provisioning to get the files and incorporate them into your own PnP provisioning template.
+
+```bash
+cd Provisioning
+```
+
+Here's a quick writeup for provisioning, if you need help: https://www.c-sharpcorner.com/blogs/get-and-apply-pnp-template-of-a-specific-list-or-library-using-pnp-provisioning-engine
+
 ### Building the code
 
 To try out the web part, pull the repo.
