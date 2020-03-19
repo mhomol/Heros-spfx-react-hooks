@@ -8,12 +8,34 @@ PnP provisioning xml templates have been provided in the Provisioning folder tha
 
 ### Building the code
 
+To try out the web part, pull the repo.
+
 ```bash
-git clone the repo
+git clone https://github.com/mhomol/Heros-spfx-react-hooks.git
+```
+
+Navigate down to the WebParts directory
+
+```bash
+cd WebParts
+```
+
+Update the npm packages and ensure that gulp is installed globally
+
+```bash
 npm i
 npm i -g gulp
-gulp
 ```
+
+Finally serve up the part.  My advice would be to try this out through your own tenant's workbench, since you will need lists to access.
+
+```bash
+gulp serve
+```
+
+Happy Hacking!
+
+### Here's some boilerplate from MS when we first build our Web Parts :)
 
 This package produces the following:
 
@@ -21,10 +43,9 @@ This package produces the following:
 - dist/\* - the bundled script, along with other resources
 - deploy/\* - all resources which should be uploaded to a CDN.
 
-### Build options
+### Build options after your done messing with it
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+```bash
+gulp bundle --ship
+gulp package-solution --ship
+```
