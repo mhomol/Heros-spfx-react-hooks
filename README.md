@@ -1,8 +1,9 @@
+
 ## Heros
 
 This web part interacts with a Heros list and a Hero Teams list to display information about fictitious game characters and the lineups you've placed them in. The goal of this part is as a coding exercise on properly constructing SPFx web parts that need to make multiple api calls throughout its existence while leveraging the new React Hook methodology.
 
-!(https://github.com/mhomol/Heros-spfx-react-hooks/blob/master/Heroes-Full.gif?raw=true)
+![Heros](https://github.com/mhomol/Heros-spfx-react-hooks/blob/master/Heroes-Full.gif?raw=true)
 
 ### Setting up the lists
 
