@@ -1,8 +1,8 @@
-<img src="https://github.com/mhomol/Heros-spfx-react-hooks/blob/master/React-Hooks-365.png?raw=true" width="240" height="100" />
+<img style="border:0" src="https://github.com/mhomol/Heros-spfx-react-hooks/blob/master/React-Hooks-365.png?raw=true" width="240" height="100" />
 
 ## Heros
 
-This web part interacts with a Heros list and a Hero Teams list to display information about fictitious game characters and the lineups you've placed them in. The goal of this part is as a coding exercise on properly constructing SPFx web parts that need to make multiple api calls throughout its existence while leveraging the new React Hook methodology.
+This web part interacts with a Heros list and a Hero Teams list to display information about fictitious game characters and the lineups you've placed them in. The goal of this part is as a coding exercise on properly constructing SPFx web parts that need to make multiple api calls throughout its existence while leveraging the new React Hook methodology.  This was done for a blog post that you can find here: https://threewill.com/function-components-and-hooks-architecture-tutorial/
 
 <img src="https://github.com/mhomol/Heros-spfx-react-hooks/blob/master/Heroes-Full.gif?raw=true" width="500" />
 
