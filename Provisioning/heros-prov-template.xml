@@ -22,7 +22,6 @@
                 <FieldRef Name="Power1" />
                 <FieldRef Name="Power2" />
                 <FieldRef Name="Element" />
-                <FieldRef Name="CanEvolve_x003f_" />
                 <FieldRef Name="FlavorText" />
                 <FieldRef Name="Likes" />
               </ViewFields>
@@ -42,7 +41,6 @@
                 <FieldRef Name="Power1" />
                 <FieldRef Name="Power2" />
                 <FieldRef Name="Element" />
-                <FieldRef Name="CanEvolve_x003f_" />
                 <FieldRef Name="FlavorText" />
                 <FieldRef Name="Likes" />
                 <FieldRef Name="Race" />
@@ -67,9 +65,6 @@
                 <CHOICE>Dark</CHOICE>
                 <CHOICE>Light</CHOICE>
               </CHOICES>
-            </Field>
-            <Field DisplayName="Can Evolve?" Format="Dropdown" Name="CanEvolve_x003f_" Title="Can Evolve?" Type="Boolean" ID="{52c929b4-4570-41e7-8efb-11433f3de8ca}" SourceID="{{listid:Heros}}" StaticName="CanEvolve_x003f_" ColName="bit1" RowOrdinal="0" Version="1">
-              <Default>1</Default>
             </Field>
             <Field DisplayName="Flavor Text" Format="Dropdown" MaxLength="255" Name="FlavorText" Title="Flavor Text" Type="Text" ID="{8446668d-9d5d-43a2-b03c-ce9a395eda34}" SourceID="{{listid:Heros}}" StaticName="FlavorText" ColName="nvarchar9" RowOrdinal="0" />
             <Field Decimals="0" DisplayName="Likes" Format="Dropdown" Name="Likes" Percentage="FALSE" Title="Likes" Type="Number" ID="{2125d3d3-ac6f-414f-a530-edb1869cd640}" SourceID="{{listid:Heros}}" StaticName="Likes" ColName="float1" RowOrdinal="0">

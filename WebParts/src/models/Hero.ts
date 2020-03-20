@@ -4,7 +4,6 @@ export interface IHero {
   HeroImage: IHeroImage;
   FlavorText: string;
   Element: string;
-  CanEvolve_x003f_: boolean;
   Power1: string;
   Power2: string;
   Likes: number;
