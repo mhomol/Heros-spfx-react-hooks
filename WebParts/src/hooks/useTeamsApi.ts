@@ -51,7 +51,7 @@ export function useTeamsApi(props: ITeamsApiProps): TeamsState {
         const allItems: ITeam[] = await sp.web.lists
           .getByTitle("Hero Teams")
           .items.filter(
-            `Front_x0020_HeroId eq ${hero.Id} or Middle_x0020_HeroId eq ${hero.Id} or Back_x0020_HeroId eq ${hero.Id}`
+            `FrontHeroId eq ${hero.Id} or MiddleHeroId eq ${hero.Id} or BackHeroId eq ${hero.Id}`
           )
           .get();
         console.log(allItems);
@@ -81,7 +81,7 @@ export function useTeamsApi(props: ITeamsApiProps): TeamsState {
         const teamImages: IHero[] = await sp.web.lists
           .getByTitle("Heros")
           .items.filter(
-            `Id eq ${team.Front_x0020_HeroId} or Id eq ${team.Middle_x0020_HeroId} or Id eq ${team.Back_x0020_HeroId}`
+            `Id eq ${team.FrontHeroId} or Id eq ${team.MiddleHeroId} or Id eq ${team.BackHeroId}`
           )
           .select("Id", "Title", "HeroImage")
           .get();
@@ -98,7 +98,7 @@ export function useTeamsApi(props: ITeamsApiProps): TeamsState {
             };
             teamImages.forEach(ti => {
               switch (ti.Id) {
-                case expandedTeam.Front_x0020_HeroId:
+                case expandedTeam.FrontHeroId:
                   console.log(`Found Front Line Hero ${ti.Title}`);
                   expandedTeam.Images.FrontLineHero = {
                     Id: ti.Id,
@@ -106,7 +106,7 @@ export function useTeamsApi(props: ITeamsApiProps): TeamsState {
                     HeroImage: ti.HeroImage
                   };
                   break;
-                case expandedTeam.Middle_x0020_HeroId:
+                case expandedTeam.MiddleHeroId:
                   console.log(`Found Mid Line Hero ${ti.Title}`);
                   expandedTeam.Images.MidLineHero = {
                     Id: ti.Id,
@@ -114,7 +114,7 @@ export function useTeamsApi(props: ITeamsApiProps): TeamsState {
                     HeroImage: ti.HeroImage
                   };
                   break;
-                case expandedTeam.Back_x0020_HeroId:
+                case expandedTeam.BackHeroId:
                   console.log(`Found Back Line Hero ${ti.Title}`);
                   expandedTeam.Images.BackLineHero = {
                     Id: ti.Id,

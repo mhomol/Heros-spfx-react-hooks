@@ -18,18 +18,18 @@
               </Query>
               <ViewFields>
                 <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Front_x0020_Hero" />
-                <FieldRef Name="Middle_x0020_Hero" />
-                <FieldRef Name="Back_x0020_Hero" />
+                <FieldRef Name="FrontHero" />
+                <FieldRef Name="MiddleHero" />
+                <FieldRef Name="BackHero" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <JSLink>clienttemplates.js</JSLink>
             </View>
           </pnp:Views>
           <pnp:Fields>
-            <Field Type="Lookup" DisplayName="Front Hero" Description="The hero in the front of the lineup" Required="TRUE" EnforceUniqueValues="FALSE" List="{listid:Heros}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{d453e459-2dcf-4448-ba01-4d9ce5c855a4}" SourceID="{{listid:Hero Teams}}" StaticName="Front_x0020_Hero" Name="Front_x0020_Hero" ColName="int1" RowOrdinal="0" />
-            <Field Type="Lookup" DisplayName="Middle Hero" Description="The hero in the middle position of the lineup" Required="TRUE" EnforceUniqueValues="FALSE" List="{listid:Heros}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{6209bfcc-ae0a-47af-9528-9cee1c8b775d}" SourceID="{{listid:Hero Teams}}" StaticName="Middle_x0020_Hero" Name="Middle_x0020_Hero" ColName="int2" RowOrdinal="0" />
-            <Field Type="Lookup" DisplayName="Back Hero" Description="The hero in the back position of the lineup" Required="TRUE" EnforceUniqueValues="FALSE" List="{listid:Heros}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{d718d2a6-6576-4ba0-ba1f-b3fa50de5e52}" SourceID="{{listid:Hero Teams}}" StaticName="Back_x0020_Hero" Name="Back_x0020_Hero" ColName="int3" RowOrdinal="0" />
+            <Field Type="Lookup" DisplayName="Front Hero" Description="The hero in the front of the lineup" Required="TRUE" EnforceUniqueValues="FALSE" List="{listid:Heros}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{d453e459-2dcf-4448-ba01-4d9ce5c855a4}" SourceID="{{listid:Hero Teams}}" StaticName="FrontHero" Name="FrontHero" ColName="int1" RowOrdinal="0" />
+            <Field Type="Lookup" DisplayName="Middle Hero" Description="The hero in the middle position of the lineup" Required="TRUE" EnforceUniqueValues="FALSE" List="{listid:Heros}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{6209bfcc-ae0a-47af-9528-9cee1c8b775d}" SourceID="{{listid:Hero Teams}}" StaticName="MiddleHero" Name="MiddleHero" ColName="int2" RowOrdinal="0" />
+            <Field Type="Lookup" DisplayName="Back Hero" Description="The hero in the back position of the lineup" Required="TRUE" EnforceUniqueValues="FALSE" List="{listid:Heros}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{d718d2a6-6576-4ba0-ba1f-b3fa50de5e52}" SourceID="{{listid:Hero Teams}}" StaticName="BackHero" Name="BackHero" ColName="int3" RowOrdinal="0" />
           </pnp:Fields>
           <pnp:Webhooks>
             <pnp:Webhook ServerNotificationUrl="https://13-eastus1.pushp.svc.ms/notifications?token=w2-d3a37adb-0aa3-481c-9b1b-13e4bf57430f" ExpiresInDays="1" />
