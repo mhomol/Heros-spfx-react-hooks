@@ -12,7 +12,7 @@ import { ITeamHeroImages } from "../../../models/TeamHeroImages";
 export interface ITeamsPopupProps {
   hero: IHero;
   teams: ITeam[];
-  setHeroTeams: (IHero) => void; //React.Dispatch<React.SetStateAction<IHero>>;
+  setHeroTeams: (IHero) => void;
   expandTeam: (ITeam) => void;
 }
 

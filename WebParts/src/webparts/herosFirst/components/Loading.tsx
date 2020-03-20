@@ -3,7 +3,7 @@ import styles from "./HerosFirst.module.scss";
 
 export interface IRefreshProps {
   isLoading: boolean;
-  setRefresh: () => void; //React.Dispatch<React.SetStateAction<boolean>>;
+  setRefresh: () => void;
 }
 
 export const Loading: React.FunctionComponent<IRefreshProps> = props => {

@@ -4,7 +4,7 @@ import { IHero } from "./../../../models/Hero";
 
 export interface ILikeProps {
   hero: IHero;
-  setLike: (IHero) => void; //React.Dispatch<React.SetStateAction<IHero>>;
+  setLike: (IHero) => void;
 }
 
 export const Like: React.FunctionComponent<ILikeProps> = props => {
